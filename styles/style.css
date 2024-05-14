@@ -1,0 +1,193 @@
+* { 
+    margin: o;
+    padding: o;
+    font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    :root {
+        --color-primary: rgb(17, 17, 1);
+        --secondary-color: rgb(207, 238, 207);
+    }
+    
+  
+header {
+    background-color:var(--color-primary);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color)
+}
+
+section {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+#banner h1 {
+    font-size: 60px;
+}
+
+#banner p {
+    font-size: 30px;
+    width: 70%;
+}
+
+#categorias {
+    text-align: center;
+    background-color: var(--color-primary);
+
+}
+
+#categorias h3 {
+    font-size: 30px;
+}
+
+#categorias .container-grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: space-between;
+    padding: 90px;
+    
+    }
+
+    #categorias .card {
+        border: 1px solid;
+        align-items: center;
+        height: 40vh;
+        background-color: beige;
+        padding: 90px;
+    }
+
+    #categorias .card h3 {
+        font-size: 40px;
+    }
+
+    #categorias .card p {
+        font-size: 20px;
+    }
+
+    #portfolio {
+        background-color: var(--secondary-color);
+    }
+
+    #portfolio .container-grid-portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-content: space-between;
+       
+       }
+
+section img {
+    height: 125px;
+    width: 125px;
+}
+
+#portfolio h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#portfolio .card {
+    border: 1px solid;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#portfolio .card button {
+    padding: 20px;
+    background-color: var(--secondary-color)
+}
+
+#contacto {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#contacto h2 {
+    font-size: 40px;
+}
+
+#contacto form {
+    color: white;
+    padding: 60px;
+}
+
+#contaco label, #contacto input, #contacto textarea,
+#contacto button {
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+form {
+    
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+form input, textarea {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 880px) {
+    #education .container-grid-education,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #education .container-grid-education,
+    #projects .container-grid-projects {
+      grid-template-columns: 1fr;
+    }
+  }
